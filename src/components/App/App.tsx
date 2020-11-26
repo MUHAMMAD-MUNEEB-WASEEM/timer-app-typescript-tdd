@@ -6,8 +6,22 @@ import '../Timer/Timer'
 import './App.css';
 
 const App = () => (
+    <div className="area" >
+            <ul className="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+            </ul>
     <div className='container'>
         <Timer />
     </div>
+    </div >
 )
 export default App;
