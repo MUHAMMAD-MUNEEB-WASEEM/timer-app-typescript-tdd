@@ -4,8 +4,11 @@ import React from 'react';
 import Timer from '../Timer/Timer';
 import '../Timer/Timer'
 import './App.css';
+import { configNotification } from '../../firebase';
 
-const App = () => (
+function App(){
+    configNotification()
+    return (
     <div className="area" >
             <ul className="circles">
                     <li></li>
@@ -23,5 +26,6 @@ const App = () => (
         <Timer />
     </div>
     </div >
-)
+    )
+};
 export default App;
